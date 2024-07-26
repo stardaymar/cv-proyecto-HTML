@@ -54,17 +54,45 @@
         list-style-type: disc;
         margin-left: 20px;
       }
+      .contact-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+      }
+      .contact-info a {
+        display: flex;
+        align-items: center;
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: #e0e0e0;
+        color: #333;
+        text-decoration: none;
+      }
+      .contact-info a:hover {
+        background-color: #d0d0d0;
+      }
+      .contact-icon {
+        margin-right: 5px;
+      }
     </style>
   </head>
   <body>
     <header>
       <h1>Currículum Vitae</h1>
       <h2>Daymar Rosales</h2>
-      <p>
-        Información de contacto:
-        <a href="mailto:dayrosaa99@gmail.com">dayrosaa99@gmail.com</a> |
-        Teléfono: <a href="tel:+584121735972">+58 412 1735972</a>
-      </p>
+      <div class="contact-info">
+        <a href="mailto:dayrosaa99@gmail.com">
+          <span class="contact-icon">✉️</span>
+          dayrosaa99@gmail.com
+        </a>
+        <a href="tel:+584121735972">
+          <span class="contact-icon">📞</span>
+          +58 412 1735972
+        </a>
+      </div>
     </header>
     <main>
       <section>
